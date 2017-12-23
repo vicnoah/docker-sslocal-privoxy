@@ -30,7 +30,7 @@ ADD ./privoxy/config /etc/privoxy/config
 
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
-RUn chmod +x /sslocal.sh
+RUN chmod +x /sslocal.sh
 
 EXPOSE 1080 8118
 

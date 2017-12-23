@@ -1,4 +1,4 @@
-FROM hypriot/rpi-alpine:latest
+FROM armhf/alpine:latest
 MAINTAINER Ryan_Newman <15244909057.ww@gmail.com>
 
 # use china souce

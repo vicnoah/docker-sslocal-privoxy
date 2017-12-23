@@ -1,0 +1,14 @@
+version: '2'
+services:
+        sslocal:
+                image: wuwengang/docker-sslocal-privoxy
+                restart: always
+                environment:
+                        SS_SERVER: <服务器ip地址>
+                        SS_SERVER_PORT: <服务器端口>
+                        SS_SERVER_PASSWD: <服务器密码>
+                        ENCRYPT_METHON: <服务器加密方式>
+                        SS_LOCAL_PORT: 1080
+                ports:
+                        - 8118:8118
+                        - 1080:1080

@@ -2,7 +2,7 @@ FROM armhf/alpine:latest
 MAINTAINER Ryan_Newman <15244909057.ww@gmail.com>
 
 # use china souce
-# RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
 
 # set enviroment
 ENV SS_SERVER=192.168.0.12
